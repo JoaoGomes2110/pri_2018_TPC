@@ -30,10 +30,5 @@
     </resumo>
     <resultados>
         <resultado path="https://github.com/JoaoGomes2110/pri_2018_TPC">Github de Tpc's de PRI</resultado>
-        <resultado path="website/index.html">Página principal do Arquivo de Música Digital</resultado>
-        <resultado path="Server.js">Servidor de suporte ao Website em NodeJs</resultado>
-        <resultado path="arquivo_musica_digital_Website.xsl">Stylesheet do Arquivo de Música Digital em XSL.</resultado>
-        <resultado path="manifesto_tp4.xml">Manifesto-TP4 em XML.</resultado>
-        <resultado path="manifesto_tp4.html">Manifesto-TP4 em HTML.</resultado>
     </resultados>
 </manifesto>
