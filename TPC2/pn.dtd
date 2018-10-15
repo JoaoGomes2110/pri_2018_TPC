@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT prestaçãoDeContas (cabeçalho,classe,avaliação,decisões) >
+<!ELEMENT cabeçalho (estado,pai,id,título) >
+<!ELEMENT estado (#PCDATA) >
+<!ELEMENT pai (#PCDATA|hiperligação)* >
+<!ELEMENT hiperligação (#PCDATA) >
+<!ELEMENT id (#PCDATA) >
+<!ELEMENT título (#PCDATA) >
+
+<!ATTLIST hiperligação 
+                    path CDATA #REQUIRED>
+
+<!ELEMENT classe (descrição,notas,exemplos?,exclusões?,índice) >
+<!ELEMENT descrição (#PCDATA) >
+<!ELEMENT notas (#PCDATA) >
+<!ELEMENT exemplos EMPTY >
+<!ELEMENT exclusões EMPTY >
+<!ELEMENT índice (#PCDATA) >
+
+<!ELEMENT avaliação (processo,donos,intervenção,relacionados,legislação) >
+<!ELEMENT processo (tipo,transversal) >
+<!ELEMENT tipo (#PCDATA) >
+<!ELEMENT transversal (#PCDATA) >
+<!ELEMENT donos (#PCDATA|hiperligação)* >
+<!ELEMENT intervenção (#PCDATA|b|hiperligação)* >
+<!ELEMENT b (#PCDATA) >
+<!ELEMENT relacionados (#PCDATA|b|hiperligação)* >
+<!ELEMENT legislação (#PCDATA|hiperligação)* >
+
+<!ELEMENT decisões (administração,destinoFinal) >
+<!ELEMENT administração (prazo,contagem,justificação) >
+<!ELEMENT prazo (#PCDATA) >
+<!ELEMENT contagem (#PCDATA) >
+<!ELEMENT justificação (#PCDATA|b|hiperligação)* >
+<!ELEMENT destinoFinal (destino,justificação) >
+<!ELEMENT destino (#PCDATA) >
+
+
+

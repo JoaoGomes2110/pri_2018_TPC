@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "manifesto.dtd">
+<manifesto>
+    <meta>
+        <id>PRI2018::A74033::TP3</id>
+        <título>Website para Quran</título>
+        <subtítulo></subtítulo>
+        <dinício>2 de Outubro 2018</dinício>
+        <dfim>4 de Outubro de 2018</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www.di.uminho.pt/~jcr</website>
+        </supervisor>
+    </meta>
+    <equipe>
+        <elemento>
+            <id>A74033</id>
+            <nome>João Pedro Carvalho Gomes</nome>
+            <email>a74033@alunos.uminho.pt</email>
+            <website>https://www.facebook.com/JoaoGomes2110</website>
+            <foto path="eu.jpeg"/> 
+        </elemento>
+    </equipe>
+    <resumo>
+        <para>
+            Neste trabalho foi pedido para criarmos um <i>Website</i>. 
+            Para tal foi dado um ficheiro <b>XML</b> para analisarmos, este ficheiro continha o livro <b>Quran</b>.
+        </para>
+        <para>
+            Dividi a criação do <i>Website</i> em duas fases : 
+        </para> 
+        <para>
+                -> Geração do índice;
+        </para>
+        <para>
+                -> Geração das páginas individuais alcançadas a partir do índice. 
+        </para>
+        <para>
+            Para a implementação da primeira fase criei uma tabela separando o índice, do conteudo. O índice foi numerado pela ordem das <b>Suras</b>, e o conteudo
+            apresenta a informação relativa ao autor e ferramentas usadas, e ainda o prefácio.
+        </para>
+        <para>
+            A segunda fase é gerar as páginas individuais, isto é, gerar uma página para cada <b>Sura</b>.
+            Desta forma, temos facilitada a tarefa de visualizar o conteúdo do livro, bem como, uma melhor organização do mesmo.
+        </para>
+    </resumo>
+    <resultados>
+        <resultado path="quran/index.html">Index.html Website</resultado>
+        <resultado path="quran.xsl"> Stylesheet para o Quran </resultado>
+        <resultado path="manifesto_tp3.xml"> XML do Manifesto </resultado>
+        <resultado path="manifesto.html"> HTML do Manifesto </resultado>
+    </resultados>
+</manifesto>

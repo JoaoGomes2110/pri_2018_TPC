@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "manifesto.dtd">
+<manifesto>
+    <meta>
+        <id>PRI2018::A74033::TP2</id>
+        <título>Especificação de um DTD para um Processo de Negócio</título>
+        <subtítulo></subtítulo>
+        <dinício>25 de Setembro de 2018</dinício>
+        <dfim>29 de Setembro de 2018</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www.di.uminho.pt/~jcr</website>
+        </supervisor>
+    </meta>
+    <equipe>
+        <elemento>
+            <id>A74033</id>
+            <nome>João Pedro Carvalho Gomes</nome>
+            <email>a74033@alunos.uminho.pt</email>
+            <website>https://www.facebook.com/JoaoGomes2110</website>
+            <foto path="eu.jpeg"/> 
+        </elemento>
+    </equipe>
+    <resumo>
+        <para>
+            Neste trabalho apresentamos um <b>DTD</b> (<i>Document Type Definition</i>) sobre a página <i>Web</i> (<b>http://clav.dglab.gov.pt/classes/consultar/c150.20.404</b>) que traduz um 
+            processo de negócio.
+            
+            Este <b>DTD</b> vai permitir ajudar na validação, de processos que cheguem a página, evitando que processos que não cumpram as regras estabelicidades sejam 
+            rejeitados. 
+        </para>
+        <para>
+            Fica então para ideia futura generalizar um pouco mais o <b>DTD</b>, de modo a, permitir validar vários tipos de processos diferentes cheguem ao <i>Site</i>.
+        </para>
+        <para>
+            Além disso é apresentado um <b>DTD</b> para o Manifesto deste trabalho que serviu para gerar e validar o ficheiro <i>XML</i> criado.
+            Apresentamos ainda a <b>Stylesheet</b> criada para processar o ficheiro <i>XML</i> via <b>XSLT</b>.
+        </para>
+        <para>
+            O último ficheiro apresentado é uma página <i>HTML</i>, que é resultado da transformação feita via <b>XSLT</b>.
+        </para>
+
+    </resumo>
+    <resultados>
+        <resultado path="pn.dtd">DTD para o processo de negócio </resultado>
+        <resultado path="manifesto.xsl"> Stylesheet para o Manifesto </resultado>
+        <resultado path="manifesto.dtd"> DTD para o Manifesto </resultado>
+        <resultado path="manifesto_tp2.xml"> XML do Manifesto </resultado>
+        <resultado path="manifesto_tp2.html"> HTML do Manifesto </resultado>
+    </resultados>
+</manifesto>
