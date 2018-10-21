@@ -1,0 +1,52 @@
+extends layout
+
+block corpo
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-light-grey
+                h4= obra.titulo
+            .w3-container
+                table.w3-table.w3-all
+                    tr
+                        th Título
+                        td= obra.titulo
+                    tr
+                        if obra.subtitulo
+                            th Subtítulo
+                            td= obra.subtitulo
+                    tr
+                        th Tipo
+                        td= obra.tipo
+                    tr
+                        th Compositor 
+                        td= obra.compositor
+                    tr
+                        if obra.arranjo
+                            th Arranjo
+                            td= obra.arranjo
+                    tr 
+                        th Instrumentos   
+                        td
+                            ul.w3-ul 
+                                each i in obra.instrumentos
+                                    li 
+                                        table.w3-table.w3-all
+                                            tr
+                                                th Nome
+                                                td= i.nome
+                                            tr
+                                                th Partitura
+                                                td= i.partitura.path
+                                            tr
+                                                if i.voz
+                                                    th Voz 
+                                                    td= i.voz
+                                            tr
+                                                if i.clave
+                                                    th Clave
+                                                    td= i.clave
+            footer.w3-container.w3-light-grey
+                p
+                    a(href='http://localhost:6001/index')
+                        | Voltar à Página Principal
+                address Gerado por ArquivoDeMúsicaDigitalApp by jg. 
