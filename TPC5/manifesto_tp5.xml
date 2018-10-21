@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "manifesto.dtd">
+<manifesto>
+    <meta>
+        <id>PRI2018::A74033::TP5</id>
+        <título>Website para Arquivo de Músicas Digital</título>
+        <subtítulo></subtítulo>
+        <dinício>16 de Outubro de 2018</dinício>
+        <dfim>21 de Outubro de 2018</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www.di.uminho.pt/~jcr</website>
+        </supervisor>
+    </meta>
+    <equipe>
+        <elemento>
+            <id>A74033</id>
+            <nome>João Pedro Carvalho Gomes</nome>
+            <email>a74033@alunos.uminho.pt</email>
+            <website>https://www.facebook.com/JoaoGomes2110</website>
+            <foto path="eu.jpeg"/> 
+        </elemento>
+    </equipe>
+    <resumo>
+        <para>
+            Neste trabalho foi pedido que fosse criado um ficheiro <i>index.json</i> a partir do <b>DataSet</b> do Arquivo de Musicas Digital em <i>JSON</i>, 
+            e que fosse criado um <i>Website</i> com auxilio dos templates criados em <b>Pug</b> desse mesmo <b>DataSet</b>.
+        </para>
+    </resumo>
+    <resultados>
+        <resultado path="https://github.com/JoaoGomes2110/pri_2018_TPC">Github de Tpc's de PRI</resultado>
+    </resultados>
+</manifesto>
