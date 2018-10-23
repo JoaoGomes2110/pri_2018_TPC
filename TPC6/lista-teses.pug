@@ -1,0 +1,30 @@
+extends layout
+block conteudo
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal
+                h3 Lista Teses
+            .w3-container
+                table.w3-table.all
+                    tr
+                        th Nome
+                        th Número
+                        th Curso
+                        th Instituição
+                        th Título
+                        th Data
+                        th Tipo
+                    each t in lista
+                        tr  
+                            td= t.nome
+                            td= t.numero
+                            td= t.curso
+                            td= t.instituicao
+                            td= t.titulo
+                            td= t.data
+                            td= t.tipo
+            footer.w3-container.w3-teal
+                p
+                    a(href='http://localhost:7000/')
+                        | Voltar à Página Principal
+                address Gerado por Registo de Teses App de JG.
