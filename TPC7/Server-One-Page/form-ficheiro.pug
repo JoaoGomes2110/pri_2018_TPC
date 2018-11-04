@@ -1,0 +1,35 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-pale-green
+                h3 Upload de um ficheiro
+            .w3-container
+                form.w3-container(action='/',method='POST', enctype='multipart/form-data')
+                    label.w3-text-pale-green
+                        b Ficheiro
+                    input.w3-input.w3-border.w3-light-grey(type='file', name='ficheiro')
+                    label.w3-text-pale-green
+                        b Descrição
+                    input.w3-input.w3-border.w3-light-grey(type='text', name='desc')
+                    hr
+                    input.w3-btn.w3-pale-green(type='submit', value='Enviar')
+                br
+        .w3-card-4
+            header.w3-container.w3-pale-green
+                h3 Lista Ficheiros
+            .w3-container
+                table.w3-table.all  
+                    tr
+                        th Nome:
+                        th Descrição:
+                    each f in lista
+                        -var link = '/uploaded/' + f.nome;
+                        tr
+                            td
+                                a(href= link)=f.nome   
+                            td= f.desc
+                br
+            footer.w3-container.w3-pale-green    
+                address 
+                    b Gerado por Submissão de Ficheiros App by JG.
