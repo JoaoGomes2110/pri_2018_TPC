@@ -1,0 +1,21 @@
+extends layout
+ 
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-header.w3-pale-blue
+                h3 Upload de Ficheiros
+            .w3-container
+                form.w3-container(id="myUploadForm")
+                    fieldset
+                    legend Novo Ficheiro
+                    input.w3-input.w3-border.w3-light-grey(type='file',name='ficheiro',id='fich')
+                    legend Descrição
+                    textarea.w3-input.w3-border.w3-light-grey(id='desc', rows='1', cols='80')
+                    br
+                    button.w3-button.w3-pale-blue(id='adicionar') Submeter ficheiro
+            .w3-container
+                ol(id='ficheiros')
+            footer.w3-container.w3-pale-blue
+                address Gerado por AjaxApp by JG
+        
