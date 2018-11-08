@@ -1,2 +1,8 @@
+tr
+    th Nome:
+    th Descricao:
 each f in lista
-    li= f.nome
+    tr
+        td
+            a(href= f.nome)=f.nome 
+        td= f.descricao

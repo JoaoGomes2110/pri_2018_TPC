@@ -8,14 +8,16 @@ block content
             .w3-container
                 form.w3-container(id="myUploadForm")
                     fieldset
-                    legend Novo Ficheiro
-                    input.w3-input.w3-border.w3-light-grey(type='file',name='ficheiro',id='fich')
-                    legend Descrição
-                    textarea.w3-input.w3-border.w3-light-grey(id='desc', rows='1', cols='80')
+                        legend Novo Ficheiro
+                        input.w3-input.w3-border.w3-light-grey(type='file',name='ficheiro',id='fich')
+                        br
+                        legend Descrição
+                        textarea.w3-input.w3-border.w3-light-grey(name='desc',id='desc', rows='1', cols='80')
+                        br
+                        button.w3-button.w3-pale-blue(id='adicionar') Submeter ficheiro
                     br
-                    button.w3-button.w3-pale-blue(id='adicionar') Submeter ficheiro
-            .w3-container
-                ol(id='ficheiros')
+                    table.w3-table-all(id='ficheiros')
+                    br    
             footer.w3-container.w3-pale-blue
                 address Gerado por AjaxApp by JG
         

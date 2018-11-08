@@ -15,6 +15,29 @@ router.get('/ficheiro', (req,res)=> {
     else res.json(erro)
   })
 })
+
+router.post('/ficheiro/processa', (req,res)=> {
+    var form = new formidable.IncomingForm()
+    var file = './public/uploaded/'
+    form.parse(req,(e1,fields,files) =>{
+      if(!e1){
+        var fenviado = files.ficheiro.path
+        var fnovo = './public/uploaded/' +files.ficheiro.name
+        fs.rename(fenviado,fnovo,(e2) =>{
+          if(!e2){
+            console.log('Ficheiro gravado com sucesso ' + fields.desc + ' ' + files.ficheiro.name)
+          }
+          else{
+            console.log('Erro na gravação do ficheiro ' + e2)
+          }
+        })
+      }
+      else{
+        console.log('Erro no parse do Form ' + e1)
+      }
+    })
+    res.json(file) 
+})
   
 router.post('/ficheiro/guardar', (req,res)=> {
   var f = req.body.ficheiro
