@@ -4,7 +4,7 @@ $(() => {
     $('#adicionar').click(e=> {
         e.preventDefault()
         
-        $('#ficheiros').append('<td>'+ '<a href= ' +  $('#fich').val().split('\\').pop() + '>' + $('#fich').val().split('\\').pop() + ' </a>' + '</td>' +  ' <td>' + $('#desc').val() + '</td')
+        $('#ficheiros').append('<td>'+ '<a href=""' +  $('#fich').val().split('\\').pop() + '>' + $('#fich').val().split('\\').pop() + ' </a>' + '</td>' +  ' <td>' + $('#desc').val() + '</td')
         ajaxPost()
         ajaxFormPost()
     })
