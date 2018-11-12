@@ -3,8 +3,10 @@ $(() => {
 
     $('#adicionar').click(e=> {
         e.preventDefault()
-        
-        $('#ficheiros').append('<td>'+ '<a href=""' +  $('#fich').val().split('\\').pop() + '>' + $('#fich').val().split('\\').pop() + ' </a>' + '</td>' +  ' <td>' + $('#desc').val() + '</td')
+        var filename = $('#fich').val().split('\\').pop();
+        var url = '"/uploaded/'+filename+'"'
+        $('#ficheiros').append('<tr><td>'+ '<a href='+url+'>'+filename+'</a>'+'</td>'+'<td>'+$('#desc').val()+'</td></tr>')
+        $('#ficheiros').append('<td>'+ '<a href='+url+'>'+filename+'</a>'+'</td>' +  ' <td>' + $('#desc').val() + '</td')
         ajaxPost()
         ajaxFormPost()
     })
